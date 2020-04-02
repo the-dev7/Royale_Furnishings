@@ -1,0 +1,395 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- animate aos -->
+
+  <title>Röyale Furnishings</title>
+  </head>
+  <style>
+
+  @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+  ::-webkit-scrollbar
+  {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track
+  {
+    color: transparent;
+  }
+
+  html
+  {
+    scroll-behavior: smooth;
+  }
+
+  body
+  {
+    margin: 0 0 0 0;
+    font-family: Montserrat;
+    overflow-x: hidden;
+    background-color: white;
+  }
+
+  .header
+  {
+    position: fixed;
+    top: 0px;
+    padding-left: 15px;
+    background-color: white;
+    text-align: center;
+    z-index: 3;
+    width: 100%;
+    height: 4%;
+    padding-top: 6px;
+    font-size: 13px;
+    //background-color: rgba(245, 245, 245, 1);
+    //box-shadow: 1px 1px 20px rgba(0,0,0,.3);
+  }
+
+  .header a
+  {
+    float: none;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .footer
+  {
+    position: fixed;
+    bottom: 0px;
+    padding-left: 7px;
+    padding-top: 6px;
+    font-size: 13px;
+    text-align: center;
+    background-color: white;
+    z-index: 3;
+    width: 100%;
+    height: 4%;
+  }
+
+  .footer a
+  {
+    float: none;
+    margin-left: 1.8%;
+    margin-right: 3%;
+  }
+
+  .container
+  {
+    margin-top: 1%;
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+  }
+
+  .header a:hover, .footer a:hover
+  {
+    color: rgba(255,178,0,1);
+    transition: 0.2s;
+  }
+
+  #firstbox
+  {
+    margin-left: 15px;
+    z-index: 0;
+    text-align: center;
+    opacity: 0.9;
+    padding-top: 5%;
+    width: 97.7%;
+    color: black;
+    height: 120%;
+    background-image: url("res/furnitures/bed1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+  }
+
+  #firstbox i
+  {
+    margin-top: 12%;
+    color: black;
+    font-size: 30px;
+    transition: 0.4s;
+  }
+  #firstbox i:hover
+  {
+    margin-top: 12.5%;
+    transition: 0.4s;
+  }
+
+  #logo_text
+  {
+    margin-top: 14.2%;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 7px;
+  }
+
+  #logo_subtext
+  {
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
+
+  #secondbox
+  {
+    margin-left: 15px;
+    z-index: 0;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 6%;
+    width: 97.7%;
+    color: black;
+    height: 120%;
+  }
+
+  .desc_discover
+  {
+    float: left;
+    background-color: white;
+    text-align: justify;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding-top: 2%;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px lightgrey;
+  }
+
+  .desc_discover p
+  {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+
+  .container
+  {
+    width: 100%;
+    height: 70%;
+  }
+
+  #thirdbox
+  {
+    margin-left: 5px;
+    padding-left: 2%;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 5%;
+    width: 97.7%;
+    height: 120%;
+    color: black;
+  }
+
+  .img_box, .img_box2, .img_box3, .img_box4
+  {
+    float: left;
+    text-align: center;
+    width: 23.8%;
+    height: 70%;
+    margin-top: 2%;
+    margin-right: 1%;
+    padding-top: 5%;
+    background-color: blue;
+    font-size: 40px;
+    color: black;
+    transition: 0.4s;
+  }
+
+  .img_box:hover, .img_box2:hover, .img_box3:hover, .img_box4:hover
+  {
+    box-shadow: 0px 10px 20px 10px black;
+    transition: 0.4s;
+  }
+
+  #fourthbox
+  {
+    margin-left: 15px;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 5%;
+    width: 97.7%;
+    height: 120%;
+    color: black;
+  }
+
+  .desc_insider
+  {
+    float: right;
+    text-align: justify;
+    background-color: white;
+    width: 40%;
+    height: 340px;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px lightgrey;
+  }
+
+  .desc_insider p
+  {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+
+  #fifthbox
+  {
+    margin-left: 15px;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 5%;
+    width: 97.7%;
+    height: 120%;
+    color: black;
+  }
+
+  .about
+  {
+    float: left;
+    background-color: white;
+    width: 35%;
+    height: 95%;
+    margin-left: 4%;
+    margin-top: -3%;
+    border: 1px solid lightgrey;
+    border-radius: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: -5px 10px 25px lightgrey;
+  }
+
+  .contact
+  {
+    float: right;
+    background-color: white;
+    width: 45%;
+    height: 95%;
+    margin-right: 4%;
+    margin-top: -3%;
+    border-radius: 40px;
+    border: 1px solid lightgrey;
+    box-shadow: 5px 10px 25px lightgrey;
+  }
+
+  .about p
+  {
+    text-align: justify;
+  }
+
+  .contact i
+  {
+    margin-top: 4%;
+    font-size: 35px;
+    color: black;
+    margin-right: 3.6%;
+    margin-left: 3.6%;
+    transition: 0.4s;
+  }
+
+  .contact i:hover
+  {
+    color: rgba(255,188,0,1);
+    transition: 0.4s;
+  }
+
+  </style>
+  <body>
+      <!-- Röyale Furnishings # reference text <img src="res/furnitures/topimg.jpg" width="570" height="340"> color: rgba(255,188,0,1); -->
+      <div class="header">
+        <a href="#secondbox">DISCOVER</a>
+        <a href="#thirdbox">PRODUCTS</a>
+        <a href="#fourthbox">INSIDER</a>
+        <a href="#fifthbox">THE STORY</a>
+        <a href="#fifthbox">CONTACT US</a>
+      </div>
+
+      <div class="container">
+        <div id="firstbox">
+          <div id="logo_text">RÖYALE</div>
+          <div id="logo_subtext">Furnishings</div>
+          <a href="#secondbox"><i class="fa fa-angle-double-down"></i></a>
+        </div>
+
+        <div id="secondbox">
+          <div class="desc_discover">
+            <h1>DISCOVER</h1>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis arcu finibus, rhoncus lectus vel, ornare ex. Nulla a neque gravida, gravida sapien ac, fringilla augue. Etiam dictum aliquet fermentum. Sed at molestie orci, sit amet pulvinar ante. Nam vestibulum sed urna nec lacinia. Maecenas non elit et lorem accumsan sodales. Nunc dapibus semper egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          </div>
+          <div id="sec_img" style="position: absolute; width: 45%; height: 55%; border-radius: 20px; margin-top: 4%; margin-left: 48%; background-image: url('res/furnitures/topimg.jpg'); background-size: cover; background-repeat: no-repeat; box-shadow: 0px 10px 10px 10px lightgrey;"></div>
+        </div>
+
+        <div id="thirdbox">
+          <a href="#"><div class="img_box" style="background-image: url('res/furnitures/p_bed.jpg'); background-repeat: no-repeat; background-size: cover;">BEDS</div></a>
+          <a href="#"><div class="img_box2" style="background-image: url('res/furnitures/p_sofa.jpg'); background-repeat: no-repeat; background-size: cover;">SOFA</div></a>
+          <a href="#"><div class="img_box3" style="background-image: url('res/furnitures/p_chair.jpg'); background-repeat: no-repeat; background-size: cover;">CHAIRS</div></a>
+          <a href="#"><div class="img_box4" style="background-image: url('res/furnitures/p_table.jpg'); background-repeat: no-repeat; background-size: cover;">TABLES</div></a>
+        </div>
+
+        <div id="fourthbox">
+          <div id="sec_img" style="float: left; position: absolute; width: 45%; height: 55%; border-radius: 20px; margin-top: 5.2%; margin-left: 2%; background-image: url('res/furnitures/insider.jpeg'); background-size: cover; background-repeat: no-repeat; box-shadow: 0px 10px 10px 10px lightgrey"></div>
+          <div class="desc_insider">
+            <h1>INSIDER</h1>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis arcu finibus, rhoncus lectus vel, ornare ex. Nulla a neque gravida, gravida sapien ac, fringilla augue. Etiam dictum aliquet fermentum. Sed at molestie orci, sit amet pulvinar ante. Nam vestibulum sed urna nec lacinia. Maecenas non elit et lorem accumsan sodales. Nunc dapibus semper egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          </div>
+        </div>
+
+        <div id="fifthbox">
+          <div class="about">
+            <br><br>
+            <h1>THE STORY</h1>
+            <br><br><br>
+            <p>Röyale Furnishings was established back in 1982 where three excellent furnituremakers once saw the dream to raise some money to make their own brand of furnitures. We had our first store in a rented storeroom in Old St, Plaistow, London.<br><br>Today, due to efforts put forward these people we stand at the top in the market and are the most prestigeous brands to make premium furnitures for you.</p>
+            <br>
+            <h3 style="text-align: center; font-weight: normal">© Abhinandan Deb</h3> 
+          </div>
+          <div class="contact">
+            <br><br>
+            <h1>CONTACT US</h1>
+            <br><br>
+            <p>E-mail: care@royalefurnishings.com</p>
+            <p>Phone:  +44 4611 113496
+            <br><br><br><br><br><br>
+            <h3>Follow us on Social Media Platforms</h3>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <a href="#">DESIGNS</a>
+        <a href="#">CHARITY</a>
+        <a href="#">SHIPPING</a>
+        <a href="#">LEGAL</a>
+        <a href="#">CAREERS</a>
+        <a href="#">FAQ</a>
+        <a href="#">SHOWROOM</a>
+      </div>
+
+  </body>
+</html>
